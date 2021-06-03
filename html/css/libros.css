@@ -1,0 +1,175 @@
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+}
+#main{
+	margin:auto;
+	width:100%;
+	font-family:Arial, Hevetica, sans-serif;
+	position:relative;
+	z-index:19;
+}
+ul,ol{
+	list-style:none;
+	z-index:22;
+}
+.sec li a{
+		border-style:outset;
+		opacity:0.9;
+		background-color:black;
+		color:white;
+		text-decoration:none;
+		padding:8px 10px;
+		display:block;	
+}
+.sec li a:hover{
+	background-color:cyan;
+	
+}
+.sec > li{
+	float:left;
+}
+.sec li ul{
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+.sec li:hover > ul{
+	display:block;
+}
+.sec li ul li {
+	position:relative;
+}
+.sec li ul li ul{
+	right:-140px;
+	top:0px;
+}
+a:hover{
+	color:black;
+}
+a{
+	text-decoration:none;
+}
+.stroke {
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke: 2px #1c70e2;
+}
+.stroke:hover{
+	opacity:0.8;
+	-webkit-text-fill-color: #1c70e2;
+	-webkit-text-stroke: 2px white;
+}
+header{
+	position:relative;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:flex;
+	width:100%;
+	justify-content:space-between;
+	align-items:center;
+	padding:30px 100px 0 25px;
+	z-index:20;
+	background-image:url("12560-tecnologia.jpg");
+	background-size: cover;
+	height:20%;
+}
+@media (max-width:700px){
+	header{
+		flex-direction:column;
+	}
+	header h1{
+		margin-bottom:15px; 
+	}
+}
+section{
+	position:relative;
+	width:100%;
+	top:0;
+	left:0;
+	display:flex;
+	justify-content:space-between;
+	align-content:center;
+	color:white;
+	font-family:Arial;
+	font-size:16px;
+}
+.cuerpo{
+	position:relative;
+	border-radius:12px;
+	padding:8px 8px;
+	margin:1% 1%;
+	z-index:2;
+}
+.content{
+	border-style:outset;
+	position:relative;
+	background-image:url(compu.jpg);
+	background-size:100% 100%;
+	height:300px;
+	width:800px;
+	border-radius:12px;
+	padding:8px 8px;
+	margin:1% 1%;
+}
+
+body{
+	background-size:cover;
+	width:100%;
+	height:100%;
+	background-color:black;
+	background-image:url("linea.jpg");
+	background-repeat:no-repeat;
+}
+footer{
+	position:relative;
+	color:white;
+	padding:8px 8px;
+	margin:1% 1%;
+	font-family:AR JULIAN;
+	font-size:28px;
+	text-align:center;
+	
+}
+a{
+	color:cyan;
+}
+
+@media (max-width:700px){
+	section{
+		flex-direction:column;
+	}
+	header{
+		height:55%;
+	}
+	#main{
+		bottom:135px;
+	}
+}
+
+ol:hover{
+	color:cyan;
+}
+img{
+	width:200px;
+	height:300px;
+	margin-left:190px;
+}
+@media (max-width:700px){
+	.content{
+		height:200px;
+		width:300px;
+		align-items:center;
+	}
+	img{
+		margin:2% 20%;
+		width:150px;
+		height:200px;
+	}
+}
+.stroke:hover{
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke: 2px black;
+}
